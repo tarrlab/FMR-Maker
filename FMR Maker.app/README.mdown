@@ -1,0 +1,48 @@
+# FMR Maker - for BrainVoyager QX
+
+## Purpose
+
+This application generates BrainVoyager .fmr files for each functional run in a subject directory (multiple subjects can be processed at a time)
+The application uses AppleScript as a folder droplet, Ruby to obtain paths and other information needed to make the FMR file, and AppleScript again to issue commands to BrainVoyager.
+
+## Installation
+
+Clone repository and move app to /Applications folder.
+
+## Use
+
+To use this application, drop a single folder onto the application icon.
+
+The application assumes that the dropped folder will be one of the following:
+
+1. A single subject folder containing many functional run folders with raw EPI images as shown below:
+
+![screenshot2](https://raw.github.com/tarrlab/FMR-Maker/master/FMR%20Maker.app/README_Images/screenshot2.png)
+
+2. A folder containing many subject folders, each of which contain the functional run folders as shown below:
+
+![screenshot3](https://raw.github.com/tarrlab/FMR-Maker/master/FMR%20Maker.app/README_Images/screenshot3.png)
+
+The application will create a _BV folder inside each subject's main directory, and create .fmr files for each functional run. The files will be saved to the _BV folder.
+      
+## Modifying Application Scripts
+
+There are two scripts in this application: an AppleScript script, and a Ruby script. 
+
+To edit these files, right-click on the FMR Maker application, then select Show Package Contents from the popup menu:
+
+![screenshot](https://raw.github.com/tarrlab/FMR-Maker/master/FMR%20Maker.app/README_Images/screenshot1.png)
+    
+The Ruby script can be found here:
+
+    Contents/FMR_Maker.rb
+
+The AppleScript can be found here:
+
+    Contents/Resources/Scripts/main.scpt
+    
+Alternatively, to edit the AppleScript open AppleScript Editor (located in Applications/Utilities/), and drag the application onto the AppleScript Editor dock icon, or select File...Open, and choose the application.
+
+## Contributors
+
+[Deb Johnson](https://github.com/debjohnson)
