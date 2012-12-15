@@ -24,6 +24,8 @@ The application assumes that the dropped folder will be one of the following:
 ![screenshot3](https://raw.github.com/tarrlab/FMR-Maker/master/FMR%20Maker.app/README_Images/screenshot3.png)
 
 The application will create a _BV folder inside each subject's main directory, and create .fmr files for each functional run. The files will be saved to the _BV folder.
+
+NOTE: The application assumes that the included "RenameDicomSeries" Matlab script has been used to rename directories within each subject folder.
       
 ## Modifying Application Scripts
 
