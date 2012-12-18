@@ -90,10 +90,10 @@ output = []
 
   subjects.each do |subject|
     subject[:names].each_with_index do |name, i|
-      bv_path = File.join(subject[:base_path], '_BV-')
-      subj_id = File.basename(subject[:base_path])
-      bv_folder = "#{bv_path}#{subj_id}"
-      save_path = "#{bv_folder}/#{subj_id}_#{name}.fmr"
+      bv_path      = File.join(subject[:base_path], '_BV-')
+      subj_id      = File.basename(subject[:base_path])
+      bv_folder    = "#{bv_path}#{subj_id}"
+      save_path    = "#{bv_folder}/#{subj_id}_#{name}.fmr"
       fmr_filename = "#{subj_id}_#{name}.fmr"
       output << [subject[:fmr_source_files][i], name, save_path, fmr_filename, bv_folder, subject[:run_folders][i]].join(',')
     end
