@@ -74,10 +74,10 @@ end
 output = []
 
 # Right now, the subjects hash contains the following for each subject:
- # :base_path=>path 
- # :fmr_source_files[filepath1, filepath2, etc.] 
- # :names[name1, name2, etc.] 
- # :run_folders[path1, path2, etc.]
+ # :base_path        => path 
+ # :fmr_source_files => [filepath1, filepath2, etc.] 
+ # :names            => [name1, name2, etc.] 
+ # :run_folders      => [path1, path2, etc.]
 # For the output, we want an array of lists which contain the information we need to make each individual FMR. 
 # For a single FMR file, this would be:
   # :base_path
